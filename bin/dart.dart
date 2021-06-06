@@ -1,6 +1,31 @@
 var globalVariable = 'Variable external of main';
 
+class Employee {
+  var empName;
+  var empAge;
+  var empSalary;
+
+  Employee(this.empName, this.empAge, this.empSalary);
+
+
+  Employee.name(){
+      empName  = '';
+      empAge = 0;
+      empSalary = 80;
+  }
+
+  showEmpInfo() {
+    print('Employee Name Is : $empName');
+    print('Employee Age Is : $empAge');
+    print('Employee Salary Is : $empSalary');
+  }
+}
+
 void main(List<String> arguments) {
+  var employee = Employee('','','');
+  employee = Employee.name();
+  ///employee.empSalary = 150000;
+  print(employee.empSalary);
   /*var firstName = 'Mohamed', lastName = 'Idm';
   var age = 23;
   print('${firstName.length} ' + lastName.toUpperCase());
@@ -20,7 +45,7 @@ void main(List<String> arguments) {
 
   print(double.infinity);*/
   //var globalVariable = 100;
-  print(globalVariable);
+  //print(globalVariable);
 }
 
 double getSum(double x, double y) => x + y;
