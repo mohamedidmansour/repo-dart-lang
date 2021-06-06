@@ -1,3 +1,5 @@
+var globalVariable = 'Variable external of main';
+
 void main(List<String> arguments) {
   /*var firstName = 'Mohamed', lastName = 'Idm';
   var age = 23;
@@ -10,18 +12,20 @@ void main(List<String> arguments) {
   print(nb2.isNaN);*/
 
   // function arrow
-  var x = '100U';
+  /*var x = '100U';
   print(getSum(100, 100));
   print(getSum(double.tryParse(x) != null ? double.parse(x) : 0, 100).abs());
 
   print (getLastName());
 
-  print(double.infinity);
+  print(double.infinity);*/
+  //var globalVariable = 100;
+  print(globalVariable);
 }
 
 double getSum(double x, double y) => x + y;
 
-String getName(){
+String getName() {
   return 'fff';
 }
 
