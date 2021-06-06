@@ -25,4 +25,4 @@ String getName(){
   return 'fff';
 }
 
-String getLastName() => 'getLastName';
+String getLastName({int x = 1}) => 'getLastName $x';
